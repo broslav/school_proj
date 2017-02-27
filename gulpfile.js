@@ -1,17 +1,26 @@
 let gulp = require('gulp'),
-    sass = require('gulp-sass'),
+    postcss = require('gulp-postcss'),
     pump = require('pump'),
     sourcemaps = require('gulp-sourcemaps'),
-    pug = require('gulp-pug');
+    pug = require('gulp-pug'),
+    utils =  require("postcss-utilities"),
+    postcssUnits = require('postcss-units');
 
 
-gulp.task("sass", (callback) => {
+gulp.task("css", (callback) => {
     pump([
-        gulp.src(['src/sass/style.scss']),
+        gulp.src(['src/styles/style.css']),
         sourcemaps.init(),
-        sass(),
+        postcss([
+            // postcssUnits({fallback: true}),
+            require("postcss-import")(),
+            utils(),
+            require('postcss-font-magician')(),
+            require("postcss-cssnext")(),
+            require("postcss-browser-reporter")(),
+            require("postcss-reporter")()]),
         sourcemaps.write("."),
-        gulp.dest('public/css/')
+        gulp.dest('./')
     ], callback)
 });
 
@@ -20,11 +29,11 @@ gulp.task("pug", (callback) => {
     pump([
         gulp.src(['src/pug/*.pug']),
         pug({pretty: true}),
-        gulp.dest('public')
+        gulp.dest('./')
     ], callback)
 });
 
 
 gulp.task('watch', () => {
-    gulp.watch(['src/**/*.*'], ['sass', 'pug']);
+    gulp.watch(['src/**/*.*'], ['css', 'pug']);
 });

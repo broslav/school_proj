@@ -1,0 +1,71 @@
+.footer {
+  background: var(--colorBlack);
+  color: #878787;
+  padding: 10px 0;
+
+  & .container {
+    @util clearfix;
+  }
+
+  &__left {
+    float: left;
+    width: 50%;
+    text-align: left;
+  }
+
+  &__right {
+    float: right;
+    width: 50%;
+    text-align: right;
+  }
+}
+
+.social {
+
+  &__list {
+    font-size: 0;
+  }
+  &__item {
+    @apply --inlineBlock;
+    margin-right: 2px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    font-size: 0;
+    display: block;
+    @util size(31px, 30px);
+
+    &--fb {
+      background: url('img/icons/sprite-socials.png') -10px -5px no-repeat;
+
+      &:hover {
+        background-position: -10px -49px;
+      }
+    }
+
+    &--vk {
+      background: url('img/icons/sprite-socials.png') -48px -5px no-repeat;
+      &:hover {
+        background-position: -48px -49px;
+      }
+    }
+
+    &--tw {
+      background: url('img/icons/sprite-socials.png') -86px -5px no-repeat;
+      &:hover {
+        background-position: -86px -49px;
+      }
+    }
+  }
+}
+
+.copyrights {
+  @apply --inlineBlock;
+  line-height: 30px;
+  font-size: 14px;
+  color: #9c9c9c;
+}

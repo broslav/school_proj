@@ -1,0 +1,15 @@
+:root {
+    --containerWidth: 940px;
+    --colorBlack: #414141;
+    --colorGray: #727272;
+    --colorBlue: #33c1e3;
+    --colorRed: #e85f61;
+    --colorBody: #f6f6f6;
+    --colorLightGray: #646464;
+
+    --inlineBlock: {
+        display: inline-block;
+        vertical-align: middle;
+    };
+}
+
