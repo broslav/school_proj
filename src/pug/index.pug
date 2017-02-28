@@ -1,18 +1,24 @@
 doctype html
 html(lang="en")
-    head
-        meta(charset="UTF-8")
+    include includes/head
         title= 'About me'
-        meta(http-equiv="X-UA-Compatible" content="IE=edge, chrome=1")
-        meta(name="viewport" content="width=960")
-        link(rel="stylesheet" href="css/style.css")
-        script(src="https://use.fontawesome.com/c57983dc66.js")
     body
         .wrapper
             include includes/header
             .main-section
                 .container
-                    include includes/sidebar
+                    aside.sidebar
+                        nav.nav
+                            ul.nav__list
+                                li.nav__item.active
+                                    a(href="#").nav__link.nav__link--about
+                                        span.nav__text Обо мне
+                                li.nav__item
+                                    a(href="career.html").nav__link.nav__link--career
+                                        span.nav__text Карьерный путь
+                                li.nav__item
+                                    a(href="#").nav__link.nav__link--portfolio
+                                        span.nav__text Портфолио
                     main.page-content
                         include includes/about
         include includes/footer
