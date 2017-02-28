@@ -135,4 +135,155 @@
   color: var(--colorBlack);
   margin: 0 0 19px 0;
   line-height: 1;
+
+  &--career {
+    margin-bottom: 26px;
+  }
+}
+
+.career {
+
+  &__left {
+    float: left;
+    width: 240px;
+  }
+
+  &__right {
+    float: right;
+    width: 460px;
+  }
+
+  &__picture-container {
+    @util size(220px);
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  &__picture {
+    display: block;
+    /*max-width: 100%;*/
+    max-height: 100%;
+  }
+
+  &__list {
+  }
+
+  &__item {
+    text-align: right;
+    margin-bottom: 20px;
+    
+    &:first-child {
+      & .career__item-inner {
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    &:last-child {
+      & .career__item-inner {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__item-inner {
+    position: relative;
+    width: 380px;
+    padding: 15px 20px 13px 20px;
+    text-align: left;
+    display: inline-block;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    transition: .2s;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 1px;
+      background-color: #ddd;
+      left: -21px;
+    }
+
+    &:before {
+      top: 0;
+      bottom: 50%;
+      margin-bottom: 10px;
+    }
+
+    &:after {
+      top: 50%;
+      bottom: -22px;
+      margin-top: 10px;
+    }
+    
+    &:hover {
+      background: var(--colorBlue);
+
+      & .career__date,
+      & .career__position,
+      & .career__job {
+        color: #fff;
+      }
+
+      & .career__year {
+        color: var(--colorBlue);
+        font-weight: 500;
+
+        &:after {
+          border-color: #94e0f2;
+        }
+      }
+
+    }
+  }
+
+  &__job {
+    font-size: 21px;
+    font-weight: 400;
+    color: var(--colorGray);
+    transition: .2s;
+  }
+
+  &__position,
+  &__date {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--colorGray);
+    transition: .2s;
+  }
+
+  &__year {
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    line-height: 30px;
+    margin-top: -15px;
+    margin-right: 35px;
+    transition: .2s;
+
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--colorGray);
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      @util size(10px);
+      background: var(--colorBlue);
+      border: 5px solid var(--colorBody);
+      border-radius: 50%;
+      transition: .2s;
+
+      top: 4px;
+      right: -25px;
+    }
+  }
 }

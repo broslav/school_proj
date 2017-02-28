@@ -4,7 +4,8 @@ let gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     pug = require('gulp-pug'),
     utils =  require("postcss-utilities"),
-    postcssUnits = require('postcss-units');
+    postcssUnits = require('postcss-units'),
+    ghPages = require('gulp-gh-pages');
 
 
 gulp.task("css", (callback) => {
@@ -38,6 +39,12 @@ gulp.task("pug", (callback) => {
         pug({pretty: true}),
         gulp.dest('dist')
     ], callback)
+});
+
+
+gulp.task('deploy', function() {
+    return gulp.src('./dist/**/*')
+        .pipe(ghPages());
 });
 
 
