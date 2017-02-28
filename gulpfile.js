@@ -20,7 +20,14 @@ gulp.task("css", (callback) => {
             require("postcss-browser-reporter")(),
             require("postcss-reporter")()]),
         sourcemaps.write("."),
-        gulp.dest('./')
+        gulp.dest('dist/css')
+    ], callback)
+});
+
+gulp.task('img', (callback) => {
+    pump([
+        gulp.src(['src/img/**/*']),
+        gulp.dest('dist/img/')
     ], callback)
 });
 
@@ -29,11 +36,11 @@ gulp.task("pug", (callback) => {
     pump([
         gulp.src(['src/pug/*.pug']),
         pug({pretty: true}),
-        gulp.dest('./')
+        gulp.dest('dist')
     ], callback)
 });
 
 
 gulp.task('watch', () => {
-    gulp.watch(['src/**/*.*'], ['css', 'pug']);
+    gulp.watch(['src/**/*.*'], ['css', 'pug', 'img']);
 });

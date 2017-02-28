@@ -15,12 +15,12 @@
   }
 
   &__right {
+    position: relative;
     text-align: right;
     padding-top: 20px;
   }
 
 }
-
 
 .user {
 
@@ -51,24 +51,102 @@
   }
 }
 
-
 .contacts {
+
   &__container {
+    position: absolute;
+    right: -59px;
+    top: 50px;
     display: none;
+
+    &:before {
+      content: '';
+      display: block;
+      @util size(14px);
+
+      position: absolute;
+      top: -13px;
+      left: 46%;
+      right: 0;
+
+      background: #fff;
+      transform: rotate(45deg) translate(6px, 6px);
+      box-shadow: -1px -1px 1px -1px rgba(0, 0, 0, .44);
+    }
+
+}
+
+&__link {
+  @apply --inlineBlock;
+
+  color: var(--colorBlue);
+  font-weight: 700;
+  text-decoration: none;
+  background: url('img/decor/dot-bg.png') 0 bottom repeat-x;
+  transition: .2s;
+
+  &:hover {
+    color: var(--colorRed);
+    background: url('img/decor/dot-bg-red.png') 0 bottom repeat-x;
+  }
+}
+
+&__list {
+  text-align: left;
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+&__item {
+  border-bottom: 1px solid #dedede;
+
+  &:last-child {
+    border-bottom: none;
   }
 
-  &__link {
-    @apply --inlineBlock;
+}
 
+&__item-link {
+  display: block;
+  padding: 14px 20px 14px 20px;
+  color: var(--colorBlack);
+  font-weight: 300;
+  text-decoration: none;
+  background: #fff;
+  transition: .2s;
+  
+  &:hover {
     color: var(--colorBlue);
-    font-weight: 700;
-    text-decoration: none;
-    background: url('img/decor/dot-bg.png') 0 bottom repeat-x;
-    transition: .2s;
+  }
 
-    &:hover {
-      color: var(--colorRed);
-      background: url('img/decor/dot-bg-red.png') 0 bottom repeat-x;
+  &:before {
+    @apply --inlineBlock;
+    margin-right: 9px;
+    color: var(--colorBlue);
+  }
+
+  &--email {
+    &:before {
+      font-family: 'FontAwesome';
+      content: '\f0e0';
+    }
+  }
+
+  &--tel {
+    &:before {
+      font-family: 'FontAwesome';
+      content: '\f095';
+    }
+  }
+
+  &--skype {
+    &:before {
+      font-family: 'FontAwesome';
+      content: '\f17e';
     }
   }
 }
+
+}
+
