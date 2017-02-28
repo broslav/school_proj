@@ -1072,7 +1072,7 @@ footer {
 }
 
 .career__item-inner:hover .career__year:after {
-  border-color: #94e0f2;
+  box-shadow: 0 0 0 5px #94e0f2;
 }
 
 .career__job {
@@ -1113,12 +1113,12 @@ footer {
   width: 10px;
   height: 10px;
   background: #33c1e3;
-  border: 5px solid #f6f6f6;
+  box-shadow: 0 0 0 5px #f6f6f6;
   border-radius: 50%;
   -webkit-transition: .2s;
   transition: .2s;
-  top: 4px;
-  right: -25px;
+  top: 10px;
+  right: -20px;
 }
 
 .button {
