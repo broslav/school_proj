@@ -1068,7 +1068,6 @@ footer {
 
 .career__item-inner:hover .career__year {
   color: #33c1e3;
-  font-weight: 500;
 }
 
 .career__item-inner:hover .career__year:after {
@@ -1113,7 +1112,6 @@ footer {
   width: 10px;
   height: 10px;
   background: #33c1e3;
-  box-shadow: 0 0 0 5px #f6f6f6;
   border-radius: 50%;
   -webkit-transition: .2s;
   transition: .2s;
