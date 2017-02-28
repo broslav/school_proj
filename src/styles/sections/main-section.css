@@ -237,7 +237,7 @@
         font-weight: 500;
 
         &:after {
-          border-color: #94e0f2;
+          box-shadow: 0 0 0 5px #94e0f2;
         }
       }
 
@@ -278,12 +278,12 @@
       display: block;
       @util size(10px);
       background: var(--colorBlue);
-      border: 5px solid var(--colorBody);
+      box-shadow: 0 0 0 5px var(--colorBody);
       border-radius: 50%;
       transition: .2s;
 
-      top: 4px;
-      right: -25px;
+      top: 10px;
+      right: -20px;
     }
   }
 }
