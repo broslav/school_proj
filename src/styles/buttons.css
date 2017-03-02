@@ -28,4 +28,15 @@
       background: var(--colorRed);
     }
   }
+
+  &--green {
+    color: #fff;
+    border-color: #fff;
+    padding-left: 12px;
+
+    &:hover {
+      background: #fff;
+      color: var(--colorGreen);
+    }
+  }
 }

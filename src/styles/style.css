@@ -3,6 +3,8 @@
 @import "variables.css";
 @import "sections/header.css";
 @import "sections/main-section.css";
+@import "sections/start.css";
+@import "sections/portfolio.css";
 @import "buttons.css";
 @import "sections/footer.css";
 

@@ -1,7 +1,7 @@
 doctype html
 html(lang="en")
     include includes/head
-        title= 'My career'
+        title= 'About me'
         script(src="https://use.fontawesome.com/c57983dc66.js")
     body
         .wrapper
@@ -11,16 +11,15 @@ html(lang="en")
                     aside.sidebar
                         nav.nav
                             ul.nav__list
-                                li.nav__item
-                                    a(href="index.html").nav__link.nav__link--about
-                                        span.nav__text Обо мне
                                 li.nav__item.active
-                                    a(href="#").nav__link.nav__link--career
+                                    a(href="#").nav__link.nav__link--about
+                                        span.nav__text Обо мне
+                                li.nav__item
+                                    a(href="career.html").nav__link.nav__link--career
                                         span.nav__text Карьерный путь
                                 li.nav__item
                                     a(href="portfolio.html").nav__link.nav__link--portfolio
                                         span.nav__text Портфолио
                     main.page-content
-                        h1.title.title--career Карьерный путь
-                        include includes/career.pug
+                        include includes/about
         include includes/footer
