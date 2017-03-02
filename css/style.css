@@ -606,6 +606,11 @@ body {
   background: #f6f6f6;
 }
 
+#app {
+  width: 100vw;
+  height: 100vh;
+}
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;
