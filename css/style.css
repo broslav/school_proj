@@ -606,9 +606,9 @@ body {
   background: #f6f6f6;
 }
 
-#app {
-  width: 100vw;
-  height: 100vh;
+#app,
+.main-wrapper{
+  height: 100%;
 }
 
 .wrapper {
@@ -1169,6 +1169,7 @@ footer {
 
 .start {
   width: 300px;
+  padding-top: 50px;
   background: #fff;
   border-radius: 10px;
   border: 1px solid #e4e4e4;
@@ -1177,7 +1178,9 @@ footer {
 }
 
 .start__avatar-container {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 140px;
   height: 140px;
   border-radius: 50%;
@@ -1199,7 +1202,6 @@ footer {
 }
 
 .start__top-block {
-  margin-top: -110px;
   padding-bottom: 25px;
 }
 
