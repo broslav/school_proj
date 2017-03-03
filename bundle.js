@@ -12364,7 +12364,7 @@ var Hello = exports.Hello = function (_React$Component) {
                         { className: 'start__bottom-block' },
                         _react2.default.createElement(
                             _reactRouter.Link,
-                            { to: 'app', className: 'button button--green' },
+                            { to: 'about', className: 'button button--green' },
                             '\u041F\u0435\u0440\u0435\u0439\u0442\u0438 \u043D\u0430 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0443'
                         )
                     )
@@ -12998,7 +12998,7 @@ var Sidebar = exports.Sidebar = function (_React$Component) {
                             { className: 'nav__item' },
                             _react2.default.createElement(
                                 _reactRouter.Link,
-                                { to: 'app/', className: 'nav__link nav__link--about', activeClassName: 'active' },
+                                { to: 'app/', className: 'nav__link nav__link--about', activeClassName: 'active', onlyActiveOnIndex: true },
                                 _react2.default.createElement(
                                     'span',
                                     { className: 'nav__text' },
