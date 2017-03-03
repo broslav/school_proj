@@ -12998,7 +12998,7 @@ var Sidebar = exports.Sidebar = function (_React$Component) {
                             { className: 'nav__item' },
                             _react2.default.createElement(
                                 _reactRouter.Link,
-                                { to: 'app/', className: 'nav__link nav__link--about' },
+                                { to: 'app/', className: 'nav__link nav__link--about', activeClassName: 'active' },
                                 _react2.default.createElement(
                                     'span',
                                     { className: 'nav__text' },
@@ -13008,10 +13008,10 @@ var Sidebar = exports.Sidebar = function (_React$Component) {
                         ),
                         _react2.default.createElement(
                             'li',
-                            { className: 'nav__item active' },
+                            { className: 'nav__item' },
                             _react2.default.createElement(
                                 _reactRouter.Link,
-                                { to: 'app/career', className: 'nav__link nav__link--career' },
+                                { to: 'app/career', className: 'nav__link nav__link--career', activeClassName: 'active' },
                                 _react2.default.createElement(
                                     'span',
                                     { className: 'nav__text' },
@@ -13024,7 +13024,7 @@ var Sidebar = exports.Sidebar = function (_React$Component) {
                             { className: 'nav__item' },
                             _react2.default.createElement(
                                 _reactRouter.Link,
-                                { to: 'app/portfolio', className: 'nav__link nav__link--portfolio' },
+                                { to: 'app/portfolio', className: 'nav__link nav__link--portfolio', activeClassName: 'active' },
                                 _react2.default.createElement(
                                     'span',
                                     { className: 'nav__text' },
