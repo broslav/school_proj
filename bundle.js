@@ -12364,7 +12364,7 @@ var Hello = exports.Hello = function (_React$Component) {
                         { className: 'start__bottom-block' },
                         _react2.default.createElement(
                             _reactRouter.Link,
-                            { to: 'about', className: 'button button--green' },
+                            { to: 'app/', className: 'button button--green' },
                             '\u041F\u0435\u0440\u0435\u0439\u0442\u0438 \u043D\u0430 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0443'
                         )
                     )
