@@ -49,5 +49,5 @@ gulp.task('deploy', function() {
 
 
 gulp.task('watch', () => {
-    gulp.watch(['src/**/*.*'], ['css', 'pug', 'img']);
+    gulp.watch(['src/**/*.*'], ['css', 'img']);
 });

@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router';
 
-export default class Hello extends React.Component {
+export class Hello extends React.Component {
     constructor() {
         super();
     }
@@ -16,7 +17,9 @@ export default class Hello extends React.Component {
                         <div className="start__name">Брославский Денис</div>
                     </div>
                     <div className="start__bottom-block">
-                        <a className="button button--green" href="about.html">Перейти на страницу</a>
+                        <Link to="app/" className="button button--green">
+                            Перейти на страницу
+                        </Link>
                     </div>
                 </div>
             </div>
