@@ -12895,7 +12895,7 @@ var Header = exports.Header = function (_React$Component) {
                                 { className: "contacts__inner" },
                                 _react2.default.createElement(
                                     "a",
-                                    { className: "contacts__link", href: "#" },
+                                    { className: "contacts__link" },
                                     "\u041C\u043E\u0438 \u043A\u043E\u043D\u0442\u0430\u043A\u0442\u044B"
                                 ),
                                 _react2.default.createElement(
@@ -12909,7 +12909,7 @@ var Header = exports.Header = function (_React$Component) {
                                             { className: "contacts__item" },
                                             _react2.default.createElement(
                                                 "a",
-                                                { className: "contacts__item-link contacts__item-link--email", href: "#" },
+                                                { className: "contacts__item-link contacts__item-link--email", href: "mailto:brosla196@gmail.com" },
                                                 "brosla196@gmail.com"
                                             )
                                         ),
@@ -12918,7 +12918,7 @@ var Header = exports.Header = function (_React$Component) {
                                             { className: "contacts__item" },
                                             _react2.default.createElement(
                                                 "a",
-                                                { className: "contacts__item-link contacts__item-link--tel", href: "#" },
+                                                { className: "contacts__item-link contacts__item-link--tel", href: "tel:+79802537905" },
                                                 "+7 980 253 79 05"
                                             )
                                         ),
@@ -12927,7 +12927,7 @@ var Header = exports.Header = function (_React$Component) {
                                             { className: "contacts__item" },
                                             _react2.default.createElement(
                                                 "a",
-                                                { className: "contacts__item-link contacts__item-link--skype", href: "#" },
+                                                { className: "contacts__item-link contacts__item-link--skype", href: "skype:bro_deni" },
                                                 "bro_deni"
                                             )
                                         )
