@@ -10,7 +10,6 @@
   background: #fff;
   border-radius: 10px;
   border: 1px solid #e4e4e4;
-  /*overflow: hidden;*/
   position: relative;
 
   &__avatar-container {
@@ -43,12 +42,16 @@
 
   &__top-block {
     padding-bottom: 25px;
+
+    @media (width < 767px) {
+      padding-bottom: 10px;
+    }
   }
 
   &__name {
     margin: 0 auto;
     max-width: 150px;
-    font-family: 'Open Sans Semibold';
+    font-family: 'Open Sans Semibold', sans-serif;
     font-size: 21px;
     line-height: 28px;
     color: var(--colorBlack);
@@ -60,5 +63,9 @@
     text-align: right;
     @util border-bottom-radius(10px);
     background-color: var(--colorGreen);
+
+    @media (width < 767px) {
+      padding: 10px;
+    }
   }
 }
