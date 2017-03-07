@@ -11,12 +11,29 @@
     float: left;
     width: 50%;
     text-align: left;
+
+    @media (width < 767px) {
+      width: 80%;
+    }
+
+    @media (width < 480px) {
+      width: 0;
+    }
   }
 
   &__right {
     float: right;
     width: 50%;
     text-align: right;
+
+    @media (width < 767px) {
+      width: 20%;
+    }
+
+    @media (width < 480px) {
+      width: 100%;
+      text-align: right;
+    }
   }
 }
 
@@ -68,4 +85,8 @@
   line-height: 30px;
   font-size: 14px;
   color: #9c9c9c;
+
+  @media (width < 480px) {
+    font-size: 0;
+  }
 }

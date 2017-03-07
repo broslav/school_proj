@@ -11,6 +11,10 @@ body, html {
 html {
   font-family: 'Fira Sans', sans-serif;
   font-size: 18px;
+
+  @media (width < 767px) {
+    font-size: 14px;
+  }
 }
 
 body {
@@ -48,6 +52,15 @@ body {
 .container {
   max-width: var(--containerWidth);
   margin: 0 auto;
+  
+  @media (width < 950px) {
+    width: 100%;
+    padding: 0 20px;
+  }
+  @media (width < 767px) {
+    width: 100%;
+    padding: 0 10px;
+  }
 }
 
 li {

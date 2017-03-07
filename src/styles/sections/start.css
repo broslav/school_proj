@@ -23,6 +23,11 @@
     overflow: hidden;
 
     transform: translate(-50%, -50%);
+
+    @media (width < 767px) {
+      @util size(100px);
+      transform: translate(100%, -50%);
+    }
   }
 
   &__avatar {

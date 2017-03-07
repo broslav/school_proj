@@ -22,21 +22,24 @@ export  class Header extends React.Component {
                     </div>
                     <div className="header__right">
                         <div className="contacts">
-                            <div className="contacts__inner"><a className="contacts__link" href="#">Мои контакты</a>
+                            <div className="contacts__inner">
+                                <a className="contacts__link">
+                                    Мои контакты
+                                </a>
                                 <div className="contacts__container">
                                     <ul className="contacts__list">
                                         <li className="contacts__item">
-                                            <a className="contacts__item-link contacts__item-link--email" href="#">
+                                            <a className="contacts__item-link contacts__item-link--email" href="mailto:brosla196@gmail.com">
                                                 brosla196@gmail.com
                                             </a>
                                         </li>
                                         <li className="contacts__item">
-                                            <a className="contacts__item-link contacts__item-link--tel" href="#">
+                                            <a className="contacts__item-link contacts__item-link--tel" href="tel:+79802537905">
                                                 +7 980 253 79 05
                                             </a>
                                         </li>
                                         <li className="contacts__item">
-                                            <a className="contacts__item-link contacts__item-link--skype" href="#">
+                                            <a className="contacts__item-link contacts__item-link--skype" href="skype:bro_deni">
                                                 bro_deni
                                             </a>
                                         </li>
