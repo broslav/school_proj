@@ -1,4 +1,98 @@
 {
-  "avatar": "img/my-ava-400.jpg",
-  "name": "Денис Брославский"
+  "start_avatar": "img/my-ava-400.jpg",
+  "header_avatar": "img/header_ava.jpeg",
+  "big_avatar": "img/header_ava.jpeg",
+
+  "user": {
+    "name": "Денис Брославский",
+    "user_description": ["Привет! Меня зовут Денис. Проживаю в г. Липецк. Около года назад я увлекся веб-разработкой и даже не мог мечтать о том, что однажды я сделаю хоть что-то с применением ReactJS ;)"],
+    "contacts_mail": "brosla196@gmail.com",
+    "contacts_tel": "+79802537905",
+    "contacts_skype": "bro_deni",
+    "resume_link": "http://lipetsk.hh.ru/resume/4c60ced8ff02de6f810039ed1f654f694f3549",
+    "fb_link": "https://www.facebook.com/profile.php?id=100013033206670",
+    "vk_link": "https://vk.com/id7610647"
+  },
+  "portfolio": [
+    {
+      "title": "Deals App",
+      "descr": "Продажа одежды",
+      "type": "Приложение",
+      "image": "img/portfolio/port-1.jpg"
+    },
+    {
+      "title": "Dream-scapes",
+      "descr": "Лагуна Люфтганза",
+      "type": "Лендинг",
+      "image": "img/portfolio/port-2.jpg"
+    },
+    {
+      "title": "Creative Studio",
+      "descr": "Танцевальная студия",
+      "type": "Корпоративный сайт",
+      "image": "img/portfolio/port-3.jpg"
+    },
+    {
+      "title": "Studio Frog",
+      "descr": "Мебельный магазин",
+      "type": "Лендинг",
+      "image": "img/portfolio/port-4.jpg"
+    },
+    {
+      "title": "Carbonara",
+      "descr": "Итальянский ресторан",
+      "type": " Лендинг",
+      "image": "img/portfolio/port-5.jpg"
+    }
+  ],
+  "career": [
+    {
+      "job": "  ООО «Звезды путешествий»",
+      "position": " Системный Администратор",
+      "date": "2015 - по настоящее время",
+      "year": "1970"
+    },
+    {
+      "job": "  ООО «Звезды путешествий»",
+      "position": " Системный Администратор",
+      "date": "2015 - по настоящее время",
+      "year": "1970"
+    },
+    {
+      "job": "  ООО «Звезды путешествий»",
+      "position": " Системный Администратор",
+      "date": "2015 - по настоящее время",
+      "year": "1970"
+    },
+    {
+      "job": "  ООО «Звезды путешествий»",
+      "position": " Системный Администратор",
+      "date": "2015 - по настоящее время",
+      "year": "1970"
+    },
+    {
+      "job": "  ООО «Звезды путешествий»",
+      "position": " Системный Администратор",
+      "date": "2015 - по настоящее время",
+      "year": "1970"
+    },
+    {
+      "job": "  ООО «Звезды путешествий»",
+      "position": " Системный Администратор",
+      "date": "2015 - по настоящее время",
+      "year": "1970"
+    },
+    {
+      "job": "  ООО «Звезды путешествий»",
+      "position": " Системный Администратор",
+      "date": "2015 - по настоящее время",
+      "year": "1970"
+    },
+    {
+      "job": "  ООО «Звезды путешествий»",
+      "position": " Системный Администратор",
+      "date": "2015 - по настоящее время",
+      "year": "1970"
+    }
+  ]
 }
