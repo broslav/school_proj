@@ -6,6 +6,8 @@ export  class Header extends React.Component {
     }
 
     render() {
+        let props = this.props.data;
+
         return(
             <header className="header">
                 <div className="container">
@@ -13,9 +15,9 @@ export  class Header extends React.Component {
                         <div className="user">
                             <div className="user__avatar"><a className="user__link" href="#">
                                 <div className="user__pic-container">
-                                    <img className="user__pic" src="img/ava.jpg"/>
+                                    <img className="user__pic" src={props.header_avatar}/>
                                 </div>
-                                <span className="user__name">Денис Брославский</span>
+                                <span className="user__name">{props.name}</span>
                             </a>
                             </div>
                         </div>
@@ -29,18 +31,18 @@ export  class Header extends React.Component {
                                 <div className="contacts__container">
                                     <ul className="contacts__list">
                                         <li className="contacts__item">
-                                            <a className="contacts__item-link contacts__item-link--email" href="mailto:brosla196@gmail.com">
-                                                brosla196@gmail.com
+                                            <a className="contacts__item-link contacts__item-link--email" href={"mailto:" + props.user.contacts_mail}>
+                                                {props.user.contacts_mail}
                                             </a>
                                         </li>
                                         <li className="contacts__item">
-                                            <a className="contacts__item-link contacts__item-link--tel" href="tel:+79802537905">
-                                                +7 980 253 79 05
+                                            <a className="contacts__item-link contacts__item-link--tel" href={"tel:" + props.user.contacts_tel}>
+                                                {props.user.contacts_tel}
                                             </a>
                                         </li>
                                         <li className="contacts__item">
-                                            <a className="contacts__item-link contacts__item-link--skype" href="skype:bro_deni">
-                                                bro_deni
+                                            <a className="contacts__item-link contacts__item-link--skype" href={"skype:" + props.user.contacts_skype}>
+                                                {props.user.contacts_skype}
                                             </a>
                                         </li>
                                     </ul>

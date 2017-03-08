@@ -8,7 +8,6 @@ import {About} from './js/About';
 import {Career} from './js/Career';
 import {Portfolio} from './js/Portfolio';
 
-
 ReactDOM.render(
     <Router history={hashHistory}>
         <Route path='/' component={Hello}/>

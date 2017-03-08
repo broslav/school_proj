@@ -16,12 +16,12 @@ export  class Footer extends React.Component {
                         <div className="socials">
                             <ul className="socials__list">
                                 <li className="social__item">
-                                    <a className="social__link social__link--fb" href="https://www.facebook.com/profile.php?id=100013033206670" target="_blank">
+                                    <a className="social__link social__link--fb" href={this.props.data.user.fb_link} target="_blank">
                                         facebook
                                     </a>
                                 </li>
                                 <li className="social__item">
-                                    <a className="social__link social__link--vk" href="https://vk.com/id7610647" target="_blank">
+                                    <a className="social__link social__link--vk" href={this.props.data.user.vk_link} target="_blank">
                                         vkontakte
                                     </a>
                                 </li>

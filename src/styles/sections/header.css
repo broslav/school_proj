@@ -46,7 +46,7 @@
 
   &__pic {
     display: block;
-    max-width: 100%;
+    max-height: 100%;
   }
 
   &__link {
@@ -132,6 +132,7 @@
     text-decoration: none;
     background: url('../img/decor/dot-bg.png') 0 bottom repeat-x;
     transition: .2s;
+    cursor: pointer;
 
     &:hover {
       color: var(--colorRed);

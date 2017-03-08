@@ -3,10 +3,33 @@ import React from 'react'
 export class Career extends React.Component {
     constructor(props) {
         super(props);
+        this.data = this.props.data;
     }
     
     render() {
         document.title = 'My career';
+
+        const jobList = this.data.career.map((item, index) => {
+            return(
+                <li key={index} className="career__item">
+                    <div className="career__item-inner">
+                        <div className="career__job">
+                            {item.job}
+                        </div>
+                        <div className="career__position">
+                            {item.position}
+                        </div>
+                        <div className="career__date">
+                            {item.date}
+                        </div>
+                        <div className="career__year">
+                            {item.year}
+                        </div>
+                    </div>
+                </li>
+            )
+        });
+
         return(
             <div>
                 <h1 className="title title--career">Карьерный путь</h1>
@@ -18,70 +41,7 @@ export class Career extends React.Component {
                     </div>
                     <div className="career__right">
                         <ul className="career__list">
-                            <li className="career__item">
-                                <div className="career__item-inner">
-                                    <div className="career__job">
-                                        ООО «Звезды путешествий»
-                                    </div>
-                                    <div className="career__position">
-                                        Системный Администратор
-                                    </div>
-                                    <div className="career__date">
-                                        2015 - по настоящее время
-                                    </div>
-                                    <div className="career__year">
-                                        2016
-                                    </div>
-                                </div>
-                            </li>
-                            <li className="career__item">
-                                <div className="career__item-inner">
-                                    <div className="career__job">
-                                        ООО «Звезды путешествий»
-                                    </div>
-                                    <div className="career__position">
-                                        Системный Администратор
-                                    </div>
-                                    <div className="career__date">
-                                        2015 - по настоящее время
-                                    </div>
-                                    <div className="career__year">
-                                        2016
-                                    </div>
-                                </div>
-                            </li>
-                            <li className="career__item">
-                                <div className="career__item-inner">
-                                    <div className="career__job">
-                                        ООО «Звезды путешествий»
-                                    </div>
-                                    <div className="career__position">
-                                        Системный Администратор
-                                    </div>
-                                    <div className="career__date">
-                                        2015 - по настоящее время
-                                    </div>
-                                    <div className="career__year">
-                                        2016
-                                    </div>
-                                </div>
-                            </li>
-                            <li className="career__item">
-                                <div className="career__item-inner">
-                                    <div className="career__job">
-                                        ООО «Звезды путешествий»
-                                    </div>
-                                    <div className="career__position">
-                                        Системный Администратор
-                                    </div>
-                                    <div className="career__date">
-                                        2015 - по настоящее время
-                                    </div>
-                                    <div className="career__year">
-                                        2016
-                                    </div>
-                                </div>
-                            </li>
+                            {jobList}
                         </ul>
                     </div>
                 </div>

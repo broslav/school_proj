@@ -5,7 +5,8 @@ let gulp = require('gulp'),
     pug = require('gulp-pug'),
     utils =  require("postcss-utilities"),
     postcssUnits = require('postcss-units'),
-    ghPages = require('gulp-gh-pages');
+    ghPages = require('gulp-gh-pages'),
+    csso = require('gulp-csso');
 
 
 gulp.task("css", (callback) => {
@@ -47,6 +48,15 @@ gulp.task('deploy', function() {
         .pipe(ghPages());
 });
 
+gulp.task('development', function () {
+    return gulp.src('dist/css/style.css')
+        .pipe(csso({
+            restructure: true,
+            sourceMap: false,
+            debug: false
+        }))
+        .pipe(gulp.dest('./dist/css'));
+});
 
 gulp.task('watch', () => {
     gulp.watch(['src/**/*.*'], ['css', 'img']);
